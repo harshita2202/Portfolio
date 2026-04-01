@@ -36,7 +36,7 @@ export default function Navbar() {
           borderRadius: '8px', padding: '6px 14px',
           cursor: 'pointer', color: 'var(--text)', fontSize: '1rem',
         }}>
-          {dark ? '☀️' : '🌙'}
+          {dark ?  '🤍' : '🖤'}
         </button>
       </div>
     </nav>

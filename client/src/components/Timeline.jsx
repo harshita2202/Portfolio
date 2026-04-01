@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 
 const items = [
-  { year: '2024 – Present', title: 'B.Tech Computer Science', place: 'Your University', type: 'edu' },
+  { year: '2024  Present', title: 'B.Tech Computer Science', place: 'Your University', type: 'edu' },
   { year: '2023',           title: 'Web Dev Internship',      place: 'Some Company',   type: 'work' },
   { year: '2022',           title: 'Class 12th — PCM',        place: 'Your School',    type: 'edu' },
 ];

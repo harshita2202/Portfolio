@@ -43,7 +43,7 @@ export default function FlipProfileCard() {
             borderRadius: '12px', padding: '5px 12px',
             fontSize: '11px', whiteSpace: 'nowrap', zIndex: 10,
           }}>
-            Hey! I'm [Name] ✨
+          
           </div>
           <svg width="110" height="110" viewBox="0 0 110 110">
             <circle cx="55" cy="55" r="54" fill="#EEEDFE" stroke="#AFA9EC" strokeWidth="2"/>
@@ -55,7 +55,7 @@ export default function FlipProfileCard() {
             <path d="M48 51 Q55 57 62 51" stroke="#993556" strokeWidth="1.8" fill="none" strokeLinecap="round"/>
             <path d="M34 28 Q55 14 76 28" stroke="#2C2C2A" strokeWidth="5" fill="none" strokeLinecap="round"/>
           </svg>
-          <span style={{ fontSize: '11px', color: '#534AB7', fontWeight: 600 }}>Full-Stack Dev</span>
+          
         </div>
       </div>
     </div>

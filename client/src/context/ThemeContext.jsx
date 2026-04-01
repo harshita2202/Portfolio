@@ -7,7 +7,7 @@ export const ThemeProvider = ({ children }) => {
   const toggleTheme = () => setDark(prev => !prev);
   return (
     <ThemeContext.Provider value={{ dark, toggleTheme }}>
-      <div className={dark ? 'dark' : 'light'}>
+      <div className={dark ? 'dark' : 'light'} style={{ minHeight: '100vh', background: 'var(--bg)' }}>
         {children}
       </div>
     </ThemeContext.Provider>
