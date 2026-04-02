@@ -11,11 +11,6 @@ export default function CustomCursor() {
         dot.current.style.left = x + 'px';
         dot.current.style.top  = y + 'px';
       }
-      if (ring.current) {
-        // ring follows with slight delay via CSS transition
-        ring.current.style.left = x + 'px';
-        ring.current.style.top  = y + 'px';
-      }
     };
 
     window.addEventListener('mousemove', moveCursor);
@@ -41,15 +36,6 @@ export default function CustomCursor() {
         boxShadow:  '0 0 10px #756be4, 0 0 20px #756be4',
       }} />
 
-      {/* larger trailing ring */}
-      <div ref={ring} style={{
-        ...base,
-        width:      '36px',
-        height:     '36px',
-        border:     '1.5px solid #534AB7',
-        opacity:    0.5,
-        transition: 'left 0.1s ease, top 0.1s ease',
-      }} />
     </>
   );
 }

@@ -40,7 +40,8 @@ function Home() {
 
 export default function App() {
   return (
-    <ThemeProvider>
+    // wraping every childern and every thing in the theme  
+    <ThemeProvider> 
       <CustomCursor />
       <BrowserRouter>
         <Navbar />
