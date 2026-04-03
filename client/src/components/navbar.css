@@ -1,0 +1,88 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 8%;
+  height: 64px;
+}
+
+/* Logo */
+.logo {
+  font-weight: bolder;
+  font-size: 1.9rem;
+  color: var(--accent);
+  font-style:oblique;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+/* Links */
+.nav-links a {
+  color: var(--text2);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* Theme Button */
+.theme-btn {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 64px;
+    right: 0;
+
+    background: var(--bg);
+    border: 1px solid var(--border);
+
+    flex-direction: column;
+    width: 200px;
+    padding: 16px;
+
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}

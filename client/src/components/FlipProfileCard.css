@@ -1,0 +1,45 @@
+.flip-card {
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+}
+
+/* BOTH SIDES COMMON */
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  backface-visibility: hidden;
+
+  
+  border: 4px solid #8077e0;
+  box-shadow: 0 0 25px rgba(192, 132, 252, 0.6);
+}
+
+/* FRONT */
+.flip-front img,
+.flip-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BACK */
+.flip-back {
+  transform: rotateY(180deg);
+
+  /* subtle purple overlay */
+  background: rgba(192, 132, 252, 0.15);
+}

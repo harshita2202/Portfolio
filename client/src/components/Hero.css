@@ -1,0 +1,92 @@
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 80px 8% 0;
+  background: var(--bg);
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Left Section */
+.hero-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-intro {
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.hero-title {
+  color: var(--text2);
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+/* Primary Button */
+.btn.primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Secondary Button */
+.btn.secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+
+/* Hover Effects */
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Right Section */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-right {
+    margin-top: 20px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+}

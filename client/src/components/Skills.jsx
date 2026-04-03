@@ -52,7 +52,7 @@ export default function Skills() {
                       marginBottom: '8px',
                     }}>
                       <span style={{
-                        color: '#ffffff',
+                        color: '--text2',
                         fontWeight: 500,
                         fontSize: '0.95rem',
                       }}>

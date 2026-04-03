@@ -71,18 +71,19 @@ export default function Timeline() {
                 <h3 style={{
                   fontSize: '1rem',
                   marginBottom: '4px',
-                  color: '#ffffff',
+                  color: 'var(--text2)',
                   fontWeight: 600,
                 }}>
                   {item.title}
                 </h3>
 
                 <p style={{
-                  color: '#aaaaaa',
-                  fontSize: '0.88rem',
-                }}>
-                  {item.place}
-                </p>
+  color: '#878585',
+  fontSize: '0.88rem',
+  fontWeight: 'bold',
+}}>
+  {item.place}
+</p>
 
                 <span style={{
                   display: 'inline-block',

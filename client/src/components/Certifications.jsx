@@ -60,14 +60,14 @@ export default function Certifications() {
               fontSize: '1.4rem',
               marginBottom: '16px',
             }}>
-              🏆
+              📜 
             </div>
 
             {/* Title */}
             <h3 style={{
               fontSize: '0.98rem',
               marginBottom: '8px',
-              color: '#ffffff',
+              color: "var(--text2)",
               fontWeight: 600,
               lineHeight: 1.4,
             }}>
@@ -86,7 +86,7 @@ export default function Certifications() {
 
             {/* Year */}
             <p style={{
-              color: '#aaaaaa',
+              color: '#aaaa',
               fontSize: '0.82rem',
               marginBottom: '16px',
             }}>
