@@ -2,9 +2,9 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 
 const certs = [
-  { title: 'React - The Complete Guide', issuer: 'Udemy', year: '2024', link: '#' },
-  { title: 'Node.js Developer Course', issuer: 'Coursera', year: '2024', link: '#' },
-  { title: 'MongoDB Basics', issuer: 'MongoDB University', year: '2023', link: '#' },
+  { title: 'Java ', issuer: 'SpringBoard', year: '2025', link: '#' },
+  { title: 'Cybersecurity', issuer: 'College', year: '2026', link: '#' },
+  // { title: 'MongoDB Basics', issuer: 'MongoDB University', year: '2023', link: '#' },
 ];
 
 export default function Certifications() {

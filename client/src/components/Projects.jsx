@@ -4,25 +4,35 @@ import AOS from 'aos';
 
 const projects = [
   {
-    title: 'Portfolio Website',
-    desc:  'A full-stack MERN portfolio with animations, dark mode, and CV download.',
-    tech:  ['React', 'Node.js', 'MongoDB', 'Express'],
-    github: 'https://github.com',
-    live:   'https://yoursite.com',
+    title: 'Intelligent API Abuse Detection System (WORKING)',
+    desc: 'Built a Spring Boot middleware to monitor API usage and detect abusive patterns. Integrated a ML model for anomaly detection and implemented JWT auth with severity-based responses.',
+    tech: ['Spring Boot', 'Java', 'Machine Learning', 'JWT', 'REST APIs'],
+    github: 'https://github.com/AayanA20/intelligent-api-monitoring-system',
+    live: '#',
   },
+
   {
-    title: 'E-Commerce App',
-    desc:  'Full-stack shopping app with cart, authentication, and payment integration.',
-    tech:  ['React', 'Express', 'MongoDB', 'JWT'],
-    github: 'https://github.com',
-    live:   'https://yoursite.com',
+    title: 'Phishing Shield – Cybersecurity Project',
+    desc: 'Developed a real-time phishing detection system with website categorization. Used ML models like XGBoost and Random Forest with a Flask API and Chrome Extension for real-time alerts.',
+    tech: ['Python', 'XGBoost', 'Random Forest', 'Flask', 'JavaScript', 'Chrome Extension'],
+    github: 'https://github.com/harshita2202/CyberProject',
+    live: '#',
   },
+
   {
-    title: 'Chat Application',
-    desc:  'Real-time chat app using Socket.io with rooms and private messaging.',
-    tech:  ['React', 'Socket.io', 'Node.js', 'MongoDB'],
-    github: 'https://github.com',
-    live:   'https://yoursite.com',
+    title: 'Event Vibes – College Event Moodboard',
+    desc: 'Full-stack platform where students share event photos, reactions, and comments. Features include authentication, media uploads, notifications.',
+    tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Cloudinary'],
+    github: 'https://github.com/harshita2202/Event-Vibes',
+    live: '#',
+  },
+
+  {
+    title: 'AI Shipshape Landing Page',
+    desc: 'Designed and developed a modern landing page with responsive UI, gradient visuals, and structured sections based on Figma design.',
+    tech: ['React', 'CSS', 'Figma', 'UI/UX'],
+    github: 'https://github.com/harshita2202/ai-shipshape-landing',
+    live: '#',
   },
 ];
 

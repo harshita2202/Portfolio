@@ -2,9 +2,35 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 
 const skills = {
-  Frontend:     [['React.js', 85], ['HTML/CSS', 90], ['JavaScript', 80]],
-  Backend:      [['Node.js', 75],  ['Express.js', 75], ['REST APIs', 80]],
-  'Tools & DB': [['MongoDB', 70],  ['Git/GitHub', 85], ['VS Code', 90]],
+  'Programming Languages': [
+    ['C', 80],
+    ['Java', 80],
+    ['JavaScript', 60],
+  ],
+
+  'Web Development': [
+    ['HTML', 90],
+    ['CSS', 90],
+    ['React.js', 60],
+    ['Node.js', 65],
+    ['Express.js', 65],
+    ['Spring Boot', 50],
+    ['Maven', 70],
+  ],
+
+  'Databases': [
+    ['MySQL', 70],
+    ['MongoDB', 85],
+    ['PostgreSQL', 60],
+    ['Redis', 20],
+  ],
+
+  'Tools & Technologies': [
+    ['Git', 85],
+    ['GitHub', 90],
+    ['VS Code', 95],
+    ['Cursor', 80],
+  ],
 };
 
 export default function Skills() {
@@ -52,7 +78,7 @@ export default function Skills() {
                       marginBottom: '8px',
                     }}>
                       <span style={{
-                        color: '--text2',
+                        color: 'var(--text2)',
                         fontWeight: 500,
                         fontSize: '0.95rem',
                       }}>

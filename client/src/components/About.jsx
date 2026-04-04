@@ -21,9 +21,9 @@ export default function About() {
         </div>
         <div style={{ flex: 1, minWidth: '260px' }}>
           <p style={{ fontSize: '1.1rem', lineHeight: 1.8, color: 'var(--text2)', marginBottom: '16px' }}>
-            Hi! I'm a passionate Full-Stack Developer currently pursuing my degree.
-            I love building beautiful, functional web applications using the MERN stack.
-          </p>
+I am a B. Tech CSE student with a passion for Cybersecurity,Backend Development and Web Development. I enjoy coding, Backend as well as front-end
+development, and working with databases. Always eager to learn, I have gained hands-on experience through projects and
+hackathons. With strong problem-solving skills, I am excited about building innovative tech solutions.</p>
           <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap' }}>
             {[
               ['📍 Location', 'India'],

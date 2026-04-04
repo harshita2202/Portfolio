@@ -2,9 +2,9 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 
 const items = [
-  { year: '2024 – Present', title: 'B.Tech Computer Science', place: 'Your University', type: 'edu' },
-  { year: '2023',           title: 'Web Dev Internship',      place: 'Some Company',   type: 'work' },
-  { year: '2022',           title: 'Class 12th — PCM',        place: 'Your School',    type: 'edu' },
+  { year: '2026 – Present', title: 'B.Tech Computer Science', place: 'JK lakshmipat University', type: 'B.Tech' },
+  { year: '2025',           title: 'Web Dev Internship',      place: 'AI Shipshape',   type: 'Intern' },
+  { year: '2023',           title: 'Class 12th',        place: 'MPS International School',    type: 'PCM' },
 ];
 
 export default function Timeline() {
