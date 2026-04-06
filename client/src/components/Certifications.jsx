@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 
 const certs = [
-  { title: 'Java ', issuer: 'SpringBoard', year: '2025', link: '#' },
-  { title: 'Cybersecurity', issuer: 'College', year: '2026', link: '#' },
+  { title: 'Java ', issuer: 'SpringBoard', year: '2025',  image: '/java.jpeg' },
+  { title: 'Cybersecurity', issuer: 'College', year: '2026',  image: '/cyber.png'},
   // { title: 'MongoDB Basics', issuer: 'MongoDB University', year: '2023', link: '#' },
 ];
 
@@ -93,23 +93,22 @@ export default function Certifications() {
               {c.year}
             </p>
 
-            {/* FIXED LINK */}
-            <a
-              href={c.link}
-              target="_blank"
-              rel="noreferrer"
-              style={{
-                display: 'inline-block',
-                color: 'var(--accent)',
-                fontWeight: 600,
-                textDecoration: 'none',
-                fontSize: '0.88rem',
-                borderBottom: '1px solid var(--accent)',
-                paddingBottom: '1px',
-              }}
-            >
-              View Certificate
-            </a>
+      
+         <a href={c.image} target="_blank" rel="noreferrer">
+  <img 
+    src={c.image} 
+    alt={c.title}
+    style={{
+      width: '100%',
+      height: '140px',
+      objectFit: 'cover',
+      borderRadius: '8px',
+      marginTop: '10px',
+      border: '1px solid var(--border)',
+      cursor: 'pointer'
+    }}
+  />
+</a>
 
           </div>
         ))}

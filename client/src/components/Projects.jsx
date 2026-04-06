@@ -8,7 +8,7 @@ const projects = [
     desc: 'Built a Spring Boot middleware to monitor API usage and detect abusive patterns. Integrated a ML model for anomaly detection and implemented JWT auth with severity-based responses.',
     tech: ['Spring Boot', 'Java', 'Machine Learning', 'JWT', 'REST APIs'],
     github: 'https://github.com/AayanA20/intelligent-api-monitoring-system',
-    live: '#',
+    // live: '#',
   },
 
   {
@@ -16,7 +16,7 @@ const projects = [
     desc: 'Developed a real-time phishing detection system with website categorization. Used ML models like XGBoost and Random Forest with a Flask API and Chrome Extension for real-time alerts.',
     tech: ['Python', 'XGBoost', 'Random Forest', 'Flask', 'JavaScript', 'Chrome Extension'],
     github: 'https://github.com/harshita2202/CyberProject',
-    live: '#',
+    // live: '#',
   },
 
   {
@@ -24,7 +24,7 @@ const projects = [
     desc: 'Full-stack platform where students share event photos, reactions, and comments. Features include authentication, media uploads, notifications.',
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Cloudinary'],
     github: 'https://github.com/harshita2202/Event-Vibes',
-    live: '#',
+    
   },
 
   {
@@ -32,7 +32,7 @@ const projects = [
     desc: 'Designed and developed a modern landing page with responsive UI, gradient visuals, and structured sections based on Figma design.',
     tech: ['React', 'CSS', 'Figma', 'UI/UX'],
     github: 'https://github.com/harshita2202/ai-shipshape-landing',
-    live: '#',
+    // live: '#',
   },
 ];
 
@@ -114,12 +114,12 @@ export default function Projects() {
               }}>
                 GitHub →
               </a>
-              <a href={p.live} target="_blank" rel="noreferrer" style={{
+              {/* <a href={p.live} target="_blank" rel="noreferrer" style={{
                 color: 'var(--text2)', fontWeight: 600,
                 textDecoration: 'none', fontSize: '0.9rem',
               }}>
                 Live Demo →
-              </a>
+              </a> */}
             </div>
           </TiltCard>
         ))}
