@@ -25,7 +25,7 @@ export default function FlipProfileCard() {
 
         {/* BACK IMAGE */}
         <div className="flip-back">
-          <img src="/photo2.jpg" alt="Profile Back" />
+          <img src="/photo3.jpeg" alt="Profile Back" />
         </div>
 
       </div>
