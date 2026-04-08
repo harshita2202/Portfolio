@@ -20,12 +20,12 @@ export default function FlipProfileCard() {
 
         {/* FRONT IMAGE */}
         <div className="flip-front">
-          <img src="/photo.jpg" alt="Profile Front" />
+          <img src="/photo3.jpeg" alt="Profile Front" />
         </div>
 
         {/* BACK IMAGE */}
         <div className="flip-back">
-          <img src="/photo3.jpeg" alt="Profile Back" />
+          <img src="/photo2.jpeg" alt="Profile Back" />
         </div>
 
       </div>

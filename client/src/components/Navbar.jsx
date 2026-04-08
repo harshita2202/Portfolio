@@ -11,9 +11,9 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       
-      <span className="logo">Portfolio</span>
+      <a href="#hero" className="logo">Portfolio</a>
 
-      {/* Hamburger */}
+
       <div 
         className="hamburger"
         onClick={() => setOpen(!open)}
@@ -21,7 +21,7 @@ export default function Navbar() {
         ☰
       </div>
 
-      {/* Links */}
+      
       <div className={`nav-links ${open ? 'active' : ''}`}>
         {links.map((l) => (
           <a key={l} href={`#${l.toLowerCase()}`}>

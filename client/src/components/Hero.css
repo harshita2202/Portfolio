@@ -10,7 +10,15 @@
   flex-wrap: wrap;
 }
 
-/* Left Section */
+.hero-role {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  color: var(--accent);
+  font-weight: 600;
+  min-height: 30px; 
+}
+
 .hero-left {
   flex: 1;
   min-width: 280px;
@@ -30,7 +38,7 @@
   margin-bottom: 16px;
 }
 
-/* Buttons */
+
 .hero-buttons {
   display: flex;
   gap: 16px;
@@ -45,26 +53,23 @@
   transition: 0.25s;
 }
 
-/* Primary Button */
 .btn.primary {
   background: var(--accent);
   color: #fff;
 }
 
-/* Secondary Button */
 .btn.secondary {
   background: transparent;
   color: var(--accent);
   border: 2px solid var(--accent);
 }
 
-/* Hover Effects */
 .btn:hover {
   transform: translateY(-2px);
   opacity: 0.9;
 }
 
-/* Right Section */
+
 .hero-right {
   flex: 1;
   display: flex;

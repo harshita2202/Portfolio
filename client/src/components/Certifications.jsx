@@ -1,10 +1,12 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+import { FaCertificate } from 'react-icons/fa';
 
 const certs = [
-  { title: 'Java ', issuer: 'SpringBoard', year: '2025',  image: '/java.jpeg' },
-  { title: 'Cybersecurity', issuer: 'College', year: '2026',  image: '/cyber.png'},
-  // { title: 'MongoDB Basics', issuer: 'MongoDB University', year: '2023', link: '#' },
+  { title: 'Java', issuer: ' Infosys SpringBoard', year: '2025', image: '/java.jpeg' },
+  { title: 'Cybersecurity', issuer: 'College', year: '2026', image: '/cyber.png' },
 ];
 
 export default function Certifications() {
@@ -57,10 +59,9 @@ export default function Certifications() {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              fontSize: '1.4rem',
               marginBottom: '16px',
             }}>
-              📜 
+              <FaCertificate color="var(--accent)" size={20} />
             </div>
 
             {/* Title */}
@@ -93,22 +94,33 @@ export default function Certifications() {
               {c.year}
             </p>
 
-      
-         <a href={c.image} target="_blank" rel="noreferrer">
-  <img 
-    src={c.image} 
-    alt={c.title}
-    style={{
-      width: '100%',
-      height: '140px',
-      objectFit: 'cover',
-      borderRadius: '8px',
-      marginTop: '10px',
-      border: '1px solid var(--border)',
-      cursor: 'pointer'
-    }}
-  />
-</a>
+            {/* View Link */}
+            <a
+              href={c.image}
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display: 'inline-block',
+                padding: '6px 14px',
+                fontSize: '0.85rem',
+                fontWeight: 600,
+                color: 'var(--accent)',
+                border: '1px solid var(--accent)',
+                borderRadius: '20px',
+                textDecoration: 'none',
+                transition: 'all 0.3s',
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.background = 'var(--accent)';
+                e.target.style.color = '#fff';
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.background = 'transparent';
+                e.target.style.color = 'var(--accent)';
+              }}
+            >
+              View
+            </a>
 
           </div>
         ))}

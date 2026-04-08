@@ -9,15 +9,26 @@ export default function Hero() {
       <div className="hero-left">
         <p className="hero-intro">Hello, I'm</p>
 
-        {/* Typewriter Name */}
+       
         <h1 className="hero-title">
+          Harshita Khandelwal
+        </h1>
+
+        
+        <h2 className="hero-role">
           <ReactTyped
-            strings={['Harshita Khandelwal']}
+            strings={[
+              'Backend Developer',
+              'Full Stack Developer'
+            ]}
             typeSpeed={60}
             backSpeed={40}
+            backDelay={1200}
             loop
+            showCursor={true}
+            cursorChar="|"
           />
-        </h1>
+        </h2>
 
         <div className="hero-buttons">
           <a
@@ -26,10 +37,9 @@ export default function Hero() {
             rel="noreferrer"
             className="btn primary"
           >
-            Download CV (PDF)
+            Download CV
           </a>
-
-          <a
+                   <a
             href={`${import.meta.env.VITE_API_URL}/api/cv/docx`}
             target="_blank"
             rel="noreferrer"
