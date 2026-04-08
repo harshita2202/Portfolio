@@ -31,7 +31,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" style={{ background: 'var(--bg2)', padding: '60px 8%' }}>
+    <section id="contact" style={{  padding: '60px 8%', margin:'0', display:'block' }}>
       
       <h2 className="section-title">
         Contact <span>Me</span>
@@ -87,7 +87,7 @@ export default function Contact() {
   );
 }
 
-/* 🔹 Styles */
+
 const inputStyle = {
   padding: '12px',
   borderRadius: '8px',

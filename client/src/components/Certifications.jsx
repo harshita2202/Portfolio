@@ -1,11 +1,10 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
 import { FaCertificate } from 'react-icons/fa';
 
 const certs = [
-  { title: 'Java', issuer: ' Infosys SpringBoard', year: '2025', image: '/java.jpeg' },
+  { title: 'Java', issuer: 'SpringBoard', year: '2025', image: '/java.jpeg' },
   { title: 'Cybersecurity', issuer: 'College', year: '2026', image: '/cyber.png' },
 ];
 
@@ -15,18 +14,25 @@ export default function Certifications() {
   }, []);
 
   return (
-    <section id="certifications" style={{ background: 'var(--bg2)', padding: '60px 8%' }}>
-      
-      <h2 className="section-title">
+   <section
+  id="certifications"
+  style={{
+    background: 'var(--bg2)',
+    padding: '50px 8%',
+    margin: 0,
+  }}
+>
+      <h2 className="section-title" style={{ margin: 0, marginBottom: '20px' }}>
         My <span>Certifications</span>
       </h2>
 
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-        gap: '24px',
-      }}>
-        
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+          gap: '24px',
+        }}
+      >
         {certs.map((c, i) => (
           <div
             key={i}
@@ -48,53 +54,55 @@ export default function Certifications() {
               e.currentTarget.style.borderColor = 'var(--border)';
             }}
           >
-            
-            {/* Icon */}
-            <div style={{
-              width: '44px',
-              height: '44px',
-              borderRadius: '10px',
-              background: '#1a1a4e',
-              border: '1px solid var(--accent)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              marginBottom: '16px',
-            }}>
+            <div
+              style={{
+                width: '44px',
+                height: '44px',
+                borderRadius: '10px',
+                background: '#1a1a4e',
+                border: '1px solid var(--accent)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginBottom: '16px',
+              }}
+            >
               <FaCertificate color="var(--accent)" size={20} />
             </div>
 
-            {/* Title */}
-            <h3 style={{
-              fontSize: '0.98rem',
-              marginBottom: '8px',
-              color: "var(--text2)",
-              fontWeight: 600,
-              lineHeight: 1.4,
-            }}>
+            <h3
+              style={{
+                fontSize: '0.98rem',
+                marginBottom: '8px',
+                color: 'var(--text2)',
+                fontWeight: 600,
+                lineHeight: 1.4,
+              }}
+            >
               {c.title}
             </h3>
 
-            {/* Issuer */}
-            <p style={{
-              color: 'var(--accent)',
-              fontSize: '0.85rem',
-              fontWeight: 600,
-              marginBottom: '2px',
-            }}>
+            <p
+              style={{
+                color: 'var(--accent)',
+                fontSize: '0.85rem',
+                fontWeight: 600,
+                marginBottom: '2px',
+              }}
+            >
               {c.issuer}
             </p>
 
-            {/* Year */}
-            <p style={{
-              color: '#aaaa',
-              fontSize: '0.82rem',
-              marginBottom: '16px',
-            }}>
+            <p
+              style={{
+                color: '#aaaa',
+                fontSize: '0.82rem',
+                marginBottom: '16px',
+              }}
+            >
               {c.year}
             </p>
 
-            {/* View Link */}
             <a
               href={c.image}
               target="_blank"
@@ -121,7 +129,6 @@ export default function Certifications() {
             >
               View
             </a>
-
           </div>
         ))}
       </div>
