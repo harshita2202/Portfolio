@@ -13,7 +13,7 @@ https://portfolio-ruby-pi-g3svsesevc.vercel.app/
  Features
 
 -  Responsive modern UI
-- ark/Light theme toggle
+- Dark/Light theme toggle
 - Projects showcase
 - Certifications section
 - About me section
@@ -37,7 +37,7 @@ https://portfolio-ruby-pi-g3svsesevc.vercel.app/
 
 ##  Local Setup
 
-### 1️⃣ Clone the repository
-```bash
+### Clone the repository
+
 git clone https://github.com/harshita2202/Portfolio.git
 cd Portfolio
