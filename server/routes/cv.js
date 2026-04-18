@@ -9,11 +9,6 @@ router.get('/pdf', (req, res) => {
   });
 });
 
-router.get('/docx', (req, res) => {
-  const filePath = path.join(__dirname, '../uploads/resume.docx');
-  res.download(filePath, 'resume.docx', (err) => {
-    if (err) res.status(404).json({ msg: 'DOCX not found. Add resume.docx to server/uploads/' });
-  });
-});
+
 
 module.exports = router;

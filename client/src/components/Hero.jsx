@@ -39,14 +39,6 @@ export default function Hero() {
           >
             Download CV
           </a>
-                   <a
-            href={`${import.meta.env.VITE_API_URL}/api/cv/docx`}
-            target="_blank"
-            rel="noreferrer"
-            className="btn secondary"
-          >
-            Download CV (Word)
-          </a>
         </div>
       </div>
 
